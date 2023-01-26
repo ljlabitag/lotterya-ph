@@ -1,3 +1,4 @@
+
 //generate random numbers for Megalotto 6/45
 export default function Randomizer() {
     const randomNumbers = [];
@@ -7,9 +8,5 @@ export default function Randomizer() {
         randomNumbers.push(randomNumber);
     }
 
-    return (
-        randomNumbers.map((lottoNumber, index) => {
-            return <li key={index}>{lottoNumber}</li>
-        })
-    );
+    return randomNumbers;
 }
