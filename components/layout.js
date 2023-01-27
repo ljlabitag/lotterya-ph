@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "./navbar";
+import Navbar from "./navbar/navbar";
 
 export default function Layout({children}) {
     return (
@@ -9,9 +9,11 @@ export default function Layout({children}) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
-            <main>{children}</main>
-            <footer></footer>
+            <div className="container-fluid">
+                <Navbar />
+                <main>{children}</main>
+                <footer></footer>
+            </div>
         </>
     )
 }
